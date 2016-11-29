@@ -18,7 +18,8 @@ sudo npm install node-persist debug mdns fast-srp-hap ed25519 buffer-shims curve
 cd ~/ ; wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb && sudo dpkg -i ffmpeg_3.1.1-1_armhf.deb && rm ffmpeg_3.1.1-1_armhf.deb
 
 #Install RPi-Cam-Web-Interface (from http://elinux.org/RPi-Cam-Web-Interface)
-cd ~ ; git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git && cd RPi_Cam_Web_Interface && chmod u+x *.sh && sudo ./install.sh
+cd ~ ; git clone https://github.com/silvanmelchior/RPi_Cam_Web_Interface.git && cd RPi_Cam_Web_Interface && chmod u+x *.sh
+/home/pi/RPi_Cam_Web_Interface/install.sh
 
 #Now create custom task script (placed /home/pi/HAP-NodeJS/task) to use RPi-Cam-Web-Interface to update the snapshot
 cd /home/pi/HAP-NodeJS/ && wget https://raw.githubusercontent.com/chaotux/HomeKit-RPI-Camera/master/task && sudo chmod a+x /home/pi/HAP-NodeJS/task
